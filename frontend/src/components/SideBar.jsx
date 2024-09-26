@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function SideBar() {
   return (
@@ -7,12 +8,12 @@ function SideBar() {
         <p>Vortex Deliveries</p>
       </div>
         <ul>
-          <li><a>Dashboard</a></li>
-          <li><a>Packages</a></li>
-          <li><a>Deliveries</a></li>
-          <li><a>Customers</a></li>
-          <li><a>Analyse</a></li>
-          <li><a>Employees</a></li>
+          <li><Link to='/'>Dashboard</Link></li>
+          <li><Link to='/packages'>Packages</Link></li>
+          <li><Link to='/deliveries'>Deliveries</Link></li>
+          <li><Link to='/customers'>Customers</Link></li>
+          <li><Link to='/'>Analyse</Link></li>
+          <li><Link to='/employees'>Employees</Link></li>
         </ul>
     </div>
   )

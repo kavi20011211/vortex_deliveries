@@ -4,6 +4,11 @@ import Dashboard from './pages/Dashboard';
 import SideBar from './components/SideBar';
 import Header from './components/Header';
 import EmployeeLogin from './pages/LoginPage';
+import Deliveries from './pages/Deliveries';
+import Employees from './pages/Employees';
+import Packages from './pages/Packages';
+import Customers from './pages/Customers';
+
 
 function App() {
   const user = 8
@@ -19,6 +24,10 @@ function App() {
           <Header/>
             <Routes>
               <Route path='/' element={<Dashboard/>}/>
+              <Route path='/deliveries' element={<Deliveries/>}/>
+              <Route path='/employees' element={<Employees/>}/>
+              <Route path='/packages' element={<Packages/>}/>
+              <Route path='/customers' element={<Customers/>}/>
             </Routes>
           </div>
           </>
