@@ -1,0 +1,29 @@
+{
+  "name": "delivery-crm-system",
+  "version": "1.0.0",
+  "description": "CRM system for a delivery company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/Server.js",
+    "server": "nodemon backend/Server.js"
+  },
+  "author": "Uvindu Kavishka",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.1",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "delivery-crm-system": "file:",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
