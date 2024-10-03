@@ -8,10 +8,10 @@ import Deliveries from './pages/Deliveries';
 import Employees from './pages/Employees';
 import Packages from './pages/Packages';
 import Customers from './pages/Customers';
-
+import {useSelector} from 'react-redux'
 
 function App() {
-  const user = 8
+  const {user}=useSelector((state)=>state.auth)
   return (
     <>
       <BrowserRouter>    

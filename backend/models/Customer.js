@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const consumerSchema = mongoose.Schema({
     name:{
-        type: string,
+        type: String,
         required: [true,"Name field cannot be empty"]
     },
     address:{
-        type: string,
+        type: String,
         required: [true,"Address field cannot be empty"]
     },
     contact:{
@@ -14,11 +14,11 @@ const consumerSchema = mongoose.Schema({
         required:[true,"Contact number field cannot be empty"]
     },
     email:{
-        type: string,
+        type: String,
         required:[true,"Email field cannot be empty"]
     },
     password:{
-        type: string,
+        type: String,
         required:[true,"Password field cannot be empty"]
     }
     

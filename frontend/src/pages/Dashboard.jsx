@@ -1,7 +1,8 @@
 import React from 'react'
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-
+import StatisticGrid from '../components/StatisticGrid';
+import LineChartcustomer from '../components/LineChart-customer';
+import StatsCol from '../components/StatsCol';
 
 function Dashboard() {
   return (
@@ -12,55 +13,15 @@ function Dashboard() {
 
       <section className='header-stack'>
         <Stack direction='row' spacing={2}>
-
-        <Box sx={{
-          width : 250,
-          height : 100,
-          bgcolor : '#ebf2fa'
-        }}></Box>
-
-        <Box sx={{
-          width : 250,
-          height : 100,
-          bgcolor : '#ebf2fa'
-        }}></Box>
-
-        <Box sx={{
-          width : 250,
-          height : 100,
-          bgcolor : '#ebf2fa'
-        }}></Box>
-
-        <Box sx={{
-          width : 250,
-          height : 100,
-          bgcolor : '#ebf2fa'
-        }}></Box>
-
+          <StatisticGrid/>
         </Stack>
       </section>
 
       <Stack direction='row' spacing={2}>
-        <Box sx={{
-          width : 500,
-          height : 500,
-          bgcolor : '#ebf2fa',
-          borderRadius : 5
-        }}></Box>
+        <LineChartcustomer/>
 
         <Stack direction='column' spacing={2}>
-        <Box sx={{
-          width : 500,
-          height : 200,
-          bgcolor : '#ebf2fa',
-          borderRadius : 5
-        }}></Box>
-        <Box sx={{
-          width : 500,
-          height : 200,
-          bgcolor : '#ebf2fa',
-          borderRadius : 5
-        }}></Box>
+          <StatsCol/>
         </Stack>
       </Stack>
     </>
